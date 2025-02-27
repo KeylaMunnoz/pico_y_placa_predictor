@@ -1,15 +1,7 @@
 from datetime import datetime
 from app.models.license_plate import LicensePlate
 from app.utils.time_utils import is_restricted_time
-
-#Mapping of last digit of plate to restricted days
-RESTRICTION_DAYS = {
-    1: ["Monday"], 2: ["Monday"],
-    3: ["Tuesday"], 4: ["Tuesday"],
-    5: ["Wednesday"], 6: ["Wednesday"],
-    7: ["Thursday"], 8: ["Thursday"],
-    9: ["Friday"], 0: ["Friday"]
-}
+from app.core.config import RESTRICTION_DAYS
 
 #Function to determine if a vehicle can drive based on plate number, date, and time
 def can_drive(plate: str, date_str: str, time_str: str) -> bool:
