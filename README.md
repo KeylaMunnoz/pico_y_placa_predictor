@@ -39,8 +39,9 @@ The project follows a clean architecture with an object-oriented programming (OO
     cd frontend
     streamlit run frontend.py
    ```
-   - The frontend UI is deployed at: https://pico-y-placa.streamlit.app/
+   - Frontend will be available at: http://localhost:8501
 
+     
 
 ### ✅ Running Tests
    ```bash
